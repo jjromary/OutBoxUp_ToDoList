@@ -1,14 +1,30 @@
+import { Header } from "./components/Header";
 import { GlobalStyle } from "./styles/global";
+import { useState } from "react";
+import { NewTaskModal } from "./components/NewTaskModal";
+import { Dashboard } from "./components/Dashboard";
+
 
 export function App() {
+  const [isNewTaskModalOpen, setIsNewTaskModalOpen] = useState(false);
+
+  function handleOpenNewTaskModal() {
+    setIsNewTaskModalOpen(true);
+  }
+
+  function handleCloseNewTaskModal() {
+    setIsNewTaskModalOpen(false);
+  }
   return (
     <>
-    <h1>
-      hello world
-    </h1>
-    <GlobalStyle />
+      <Header  onOpenNewTaskModal={handleOpenNewTaskModal}/>
+      
+      <Dashboard />
+      <NewTaskModal 
+        isOpen={isNewTaskModalOpen} 
+        onRequestClose={handleCloseNewTaskModal}
+      />
+      <GlobalStyle />
     </>
   );
 }
-
-
