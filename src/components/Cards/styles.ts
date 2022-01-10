@@ -5,16 +5,15 @@ export const Container = styled.div`
   height: 17.25rem;
   background: var(--backgroundCard);
   display: flex;
-  align-items: center;
+  align-items: center;  
 
- 
-  
 `;
 
 export const Content = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+
 
   .header {
     display: flex;

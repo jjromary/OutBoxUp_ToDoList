@@ -5,6 +5,7 @@ export const Container = styled.main`
   margin: 0 auto;
   margin-top: 3.75rem;
 
+
   button:focus {
     background: var(--gray-750);
   }
