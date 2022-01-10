@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-  
 button {
     font-size: 1rem;
     color: var(--gray-50);
@@ -16,6 +15,12 @@ button {
 
     &:hover {
       filter: brightness(0.9);
+    }
+  }
+
+  @media (max-width: 340px){
+    button{
+      margin-bottom: 1rem;
     }
   }
 `;

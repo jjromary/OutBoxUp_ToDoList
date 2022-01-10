@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 1120px;
   height: 17.25rem;
-  margin-top: 3.75rem;
   background: var(--backgroundCard);
   display: flex;
   align-items: center;
@@ -16,7 +15,6 @@ export const Content = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 3.75rem;
 
   .header {
     display: flex;
@@ -45,7 +43,7 @@ export const Content = styled.div`
     span {
       margin: 1.25rem;
       display: flex;
-      justify-content: center;
+      text-align: left;
     }
   }
 
@@ -63,9 +61,4 @@ export const Content = styled.div`
       font-weight: 300;
     }
   }
-
-  @media (max-width: 375px){
-    margin-top: 3.75rem;
-  }
-  
 `;

@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer";
 
 export function App() {
   const [isNewTaskModalOpen, setIsNewTaskModalOpen] = useState(false);
+  
 
   function handleOpenNewTaskModal() {
     setIsNewTaskModalOpen(true);
