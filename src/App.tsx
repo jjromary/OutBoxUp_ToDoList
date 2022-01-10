@@ -3,6 +3,7 @@ import { GlobalStyle } from "./styles/global";
 import { useState } from "react";
 import { NewTaskModal } from "./components/NewTaskModal";
 import { Dashboard } from "./components/Dashboard";
+import { Footer } from "./components/Footer";
 
 
 export function App() {
@@ -18,12 +19,12 @@ export function App() {
   return (
     <>
       <Header  onOpenNewTaskModal={handleOpenNewTaskModal}/>
-      
       <Dashboard />
       <NewTaskModal 
         isOpen={isNewTaskModalOpen} 
         onRequestClose={handleCloseNewTaskModal}
       />
+      <Footer />
       <GlobalStyle />
     </>
   );

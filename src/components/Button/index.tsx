@@ -1,10 +1,14 @@
 import { Container } from "./styles";
 
-export function Button() {
+interface ButtonProps {
+  name: string
+}
+
+export function Button({name}: ButtonProps) {
   return (
     <Container>
       <button type="button" >
-        to do
+        {name}
       </button>
     </Container>
   );

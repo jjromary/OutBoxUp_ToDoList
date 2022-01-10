@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
   margin-top: 3.75rem;
   background: var(--header);
+  
 `;
 
 export const Content = styled.div`

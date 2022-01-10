@@ -25,12 +25,12 @@ export function NewTaskModal({ isOpen, onRequestClose }: NewTaskModalProps) {
         <img src={closeimg} alt="fechar modal" />
       </button>
       <Container>
-        <h2>Casdastrar Tarefa</h2>
+        <h2>New task</h2>
 
-        <input placeholder="Título da Tarefa" />
-        <input placeholder="Descrição da tarefa" />
+        <textarea placeholder="Title" />
+        <textarea placeholder="Description" className="description"/>
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Save</button>
       </Container>
     </Modal>
   );

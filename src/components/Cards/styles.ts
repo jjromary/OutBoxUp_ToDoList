@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 1120px;
   height: 17.25rem;
-  margin: 0 auto;
   margin-top: 3.75rem;
   background: var(--backgroundCard);
   display: flex;
   align-items: center;
+
+ 
   
 `;
 
@@ -56,8 +57,15 @@ export const Content = styled.div`
     border-radius: 0 0 1.25rem 1.25rem;
 
     span {
-      margin: 1.25rem 27.31rem 1.25rem 27.68rem;
+      margin: 0 auto;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
       font-weight: 300;
     }
   }
+
+  @media (max-width: 375px){
+    margin-top: 3.75rem;
+  }
+  
 `;
