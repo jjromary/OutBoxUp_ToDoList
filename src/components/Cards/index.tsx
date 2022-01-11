@@ -9,7 +9,7 @@ type cardProps = {
 
 export function Cards({item}: cardProps) {
   const moment = require('moment');
-
+  
   return (
     <Container>
       <Content>
@@ -27,7 +27,6 @@ export function Cards({item}: cardProps) {
             />
           </div>
         </div>
-
         <div className="description">
           <span>{item.description}</span>
         </div>

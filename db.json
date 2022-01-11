@@ -2,19 +2,8 @@
   "tasks": [
     {
       "id": 1,
-      "title": "Desafio técnico",
-      "description": "Concluir até quarta-feira.",
-      "created": " "
-    },
-    {
-      "title": "teste",
-      "description": "funciona?",
-      "id": 2
-    },
-    {
-      "title": "Entregar avaliação",
-      "description": "concluída",
-      "id": 3
+      "title": "Concluir tarefa",
+      "description": "concluir hoje"
     }
   ]
 }

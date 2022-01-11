@@ -7,16 +7,18 @@ import { Container } from "./styles";
 
 export function Dashboard() {
   const [item, seItem] = useState<Item[]>([]);
+  var name1 = "To do";
+  var name2 = "Closed";
+
+  let exibir = item.map((item, index) => (
+    <Cards key={index} item={item} />
+  ))
 
   useEffect(() => {
     axios.get("http://localhost:5000/tasks").then((response) => {
       seItem(response.data);
-      console.log(response.data);
     });
   }, []);
-
-  var name1 = "To do";
-  var name2 = "Closed";
 
   return (
     <Container>
@@ -26,9 +28,7 @@ export function Dashboard() {
         <Button name={name2} />
       </div>
 
-      {item.map((item, index) => (
-        <Cards key={index} item={item} />
-      ))}
+      {item.length > 0 ? exibir : <h1 className="warning">No tasks</h1>}
     </Container>
   );
 }
